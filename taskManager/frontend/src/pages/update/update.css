@@ -1,0 +1,7 @@
+.update-btn {
+  width: 50%;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}

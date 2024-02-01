@@ -1,0 +1,51 @@
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  background-color: aliceblue;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  min-height: 40vh;
+  display: flex;
+  gap: 10px;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 8px 1px rgb(0, 0, 0);
+  box-shadow: 0px 0px 8px 1px rgb(0, 0, 0);
+}
+.addTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Priority-selection {
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 1px 1px rgb(160, 160, 160);
+}
+
+input {
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 1px 1px rgb(160, 160, 160);
+}
+.text-area {
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 1px 1px rgb(160, 160, 160);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.add-btn {
+  width: 50%;
+}

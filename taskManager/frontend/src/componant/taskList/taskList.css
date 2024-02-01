@@ -1,0 +1,99 @@
+.blog-preview {
+  border-radius: 20px;
+  transition: 1s;
+  padding: 20px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+}
+.blog-preview:hover {
+  -webkit-box-shadow: 1px -1px 18px -1px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 1px -1px 18px -1px rgba(255, 255, 255, 1);
+  box-shadow: 1px -1px 18px -1px rgba(255, 255, 255, 1);
+  padding: 20px;
+}
+
+.paragraph {
+  width: 70%;
+}
+.title-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#update {
+  background-color: rgb(36, 160, 36);
+  border-radius: 8px;
+
+  height: 35px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  border-radius: 8px;
+  cursor: pointer;
+  height: 35px;
+  height: 35px;
+  width: 70px;
+  background-color: red;
+  font-size: 1.2rem;
+  color: white;
+}
+
+#Priority {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  align-items: center;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.high-priority {
+  -webkit-box-shadow: 0px 0px 31px -1px rgba(255, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 31px -1px rgba(255, 0, 0, 1);
+  box-shadow: 0px 0px 31px 0px rgba(255, 0, 0, 1);
+  color: white;
+  background-color: lightcoral;
+}
+
+.medium-priority {
+  -webkit-box-shadow: 0px 0px 31px -1px orange;
+  -moz-box-shadow: 0px 0px 31px -1px orange;
+  box-shadow: 0px 0px 31px 0px orange;
+  color: white;
+  background-color: rgb(243, 173, 98);
+}
+
+.low-priority {
+  -webkit-box-shadow: 0px 0px 31px -1px green;
+  -moz-box-shadow: 0px 0px 31px -1px green;
+  box-shadow: 0px 0px 31px 0px green;
+  color: white;
+  background-color: lightgreen;
+}
+
+@media screen and (max-width: 962px) {
+  .blog-preview {
+    border-radius: 20px;
+    transition: 1s;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+  }
+}
