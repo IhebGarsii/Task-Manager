@@ -1,4 +1,5 @@
 # Task-Manager
+cd taskManager
 cd frontend 
 npm i 
 npm run dev
