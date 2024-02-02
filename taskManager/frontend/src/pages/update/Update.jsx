@@ -7,17 +7,19 @@ import { useParams, useNavigate } from "react-router";
 // Functional component for updating tasks
 function Update() {
   // State variables to manage form inputs
-  const [Title, setTitle] = useState("");
-  const [Description, setDescription] = useState("");
-  const [DueDate, setDueDate] = useState("");
-  const [Priority, setPriority] = useState("");
-  const [Status, setStatus] = useState("");
+  const [Title, setTitle] = useState();
+  const [Description, setDescription] = useState();
+  const [DueDate, setDueDate] = useState();
+  const [Priority, setPriority] = useState();
+  const [Status, setStatus] = useState();
 
   // Extract the task ID from the URL parameters
   const { id } = useParams();
 
   // Fetch task data using a custom hook
-  const { data, error, isPending } = Usefetch("/tasks/");
+  const { data} = Usefetch(
+    `http://localhost:3002/tasks/${id}`
+  );
 
   // Navigation hook to redirect after updating a task
   const navigate = useNavigate();
@@ -41,11 +43,12 @@ function Update() {
   // Effect hook to populate the form with existing task data
   useEffect(() => {
     if (data) {
-      setTitle(data.Title);
-      setDescription(data.Description);
-      setDueDate(data.DueDate);
-      setPriority(data.Priority);
-      setStatus(data.Status);
+      setTitle(data.task.Title);
+      setDescription(data.task.Description);
+      setDueDate(data.task.DueDate);
+      setPriority(data.task.Priority);
+      setStatus(data.task.Status);
+      
     }
   }, [data]);
 
