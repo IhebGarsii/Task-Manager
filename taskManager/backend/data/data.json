@@ -3,7 +3,7 @@
     {
       "Title": "Update Website Content",
       "Description": "Review and update the content on the company website. Ensure that all information is accurate, and make necessary changes to reflect the latest updates and offerings. Coordinate with the marketing team to incorporate any new promotions or announcements.",
-      "DueDate": "11/02/2024",
+      "DueDate": "2024/02/11",
       "id": 1,
       "Priority": "low",
       "Status": "incomplete"
@@ -11,7 +11,7 @@
     {
       "Title": "Create Marketing Plan",
       "Description": "Develop a comprehensive marketing plan for the upcoming product launch. Collaborate with the sales team to align strategies and ensure successful execution.",
-      "DueDate": "15/02/2024",
+      "DueDate": "2024/02/15",
       "id": 2,
       "Priority": "medium",
       "Status": "incomplete"
@@ -19,7 +19,7 @@
     {
       "Title": "Review Financial Reports",
       "Description": "Analyze the financial reports for the last quarter. Identify areas for improvement and provide recommendations for optimizing budget allocation.",
-      "DueDate": "18/02/2024",
+      "DueDate": "2024/02/18",
       "id": 3,
       "Priority": "high",
       "Status": "incomplete"
@@ -27,7 +27,7 @@
     {
       "Title": "Conduct Team Training",
       "Description": "Organize a training session for the team to enhance skills and knowledge. Focus on new tools, technologies, and best practices in the industry.",
-      "DueDate": "22/02/2024",
+      "DueDate": "2024/02/22",
       "id": 4,
       "Priority": "medium",
       "Status": "incomplete"
