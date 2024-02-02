@@ -39,7 +39,7 @@ const AddTask = async (req, res) => {
   }
 };
 
-const FindPosts = async (req, res) => {
+const FindTask = async (req, res) => {
   const data = readData();
 
   if (data) {
@@ -49,7 +49,32 @@ const FindPosts = async (req, res) => {
   }
 };
 
-const UpdatePost = async (req, res) => {
+// tasksController.js
+
+// Assuming readData and writeData functions are defined
+
+const FindOneTask = (req, res) => {
+  try {
+    // Read data from the JSON file
+    const data = readData();
+
+    // Find the task with the specified id
+    const task = data.tasks.find((task) => task.id === parseInt(req.params.id));
+
+    // Check if the task with the specified id exists
+    if (task) {
+      res.status(200).json({ task });
+    } else {
+      // If the task with the specified id is not found, return a 404 status
+      res.status(404).json({ message: "Task not found" });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
+const UpdateTask = async (req, res) => {
   try {
     // Read data from the JSON file
     const data = readData();
@@ -84,7 +109,7 @@ const UpdatePost = async (req, res) => {
   }
 };
 
-const DeletePost = async (req, res) => {
+const DeleteTask = async (req, res) => {
   try {
     // Read data from the JSON file
     const data = readData();
@@ -117,8 +142,9 @@ const DeletePost = async (req, res) => {
 };
 
 module.exports = {
-  DeletePost,
-  UpdatePost,
-  FindPosts,
+  DeleteTask,
+  UpdateTask,
+  FindTask,
   AddTask,
+  FindOneTask,
 };
